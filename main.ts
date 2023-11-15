@@ -20,26 +20,35 @@ input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   loopCounter = 0
   loopCounter1 = 0
-  sprite = game.createSprite(0, 0)
+  sprite = game.createSprite(4, 0)
+  while (loopCounter <= 4) {
+    basic.pause(500)
+    sprite.move(1)
+    loopCounter = loopCounter + 1
+    }
+  sprite.turn(Direction.Right, 90)
   while (loopCounter1 <= 4) {
     basic.pause(500)
-    sprite.set(LedSpriteProperty.Y, loopCounter1)
+    sprite.move(1)
     loopCounter1 = loopCounter1 + 1
-    while (loopCounter <= 4) {
-      basic.pause(500)
-      sprite.set(LedSpriteProperty.X, loopCounter)
-      loopCounter = loopCounter + 1
-    }
   }
+
+
+
+
   loopCounter = 4
   loopCounter1 = 4
+
+
+
+
   while (loopCounter1 >= 0) {
     basic.pause(500)
-    sprite.set(LedSpriteProperty.Y, loopCounter1)
+    sprite.move(1)
     loopCounter1 = loopCounter1 - 1
     while (loopCounter >= 0) {
       basic.pause(500)
-      sprite.set(LedSpriteProperty.X, loopCounter)
+      sprite.move(1)
       loopCounter = loopCounter - 1
     }
   }

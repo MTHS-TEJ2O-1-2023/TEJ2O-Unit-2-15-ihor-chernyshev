@@ -26,10 +26,10 @@ input.onButtonPressed(Button.A, function () {
     sprite.set(LedSpriteProperty.Y, loopCounter1)
     loopCounter1 = loopCounter1 + 1
     while (loopCounter <= 4) {
-        basic.pause(500)
-        sprite.set(LedSpriteProperty.X, loopCounter)
-        loopCounter = loopCounter + 1
-        }
+      basic.pause(500)
+      sprite.set(LedSpriteProperty.X, loopCounter)
+      loopCounter = loopCounter + 1
+    }
   }
   loopCounter = 4
   loopCounter1 = 4

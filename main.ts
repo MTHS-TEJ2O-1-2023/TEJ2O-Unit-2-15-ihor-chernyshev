@@ -47,7 +47,7 @@ input.onButtonPressed(Button.A, function () {
       loopCounter1 = loopCounter1 - 1
     }
   }
-
+  basic.pause(500)
   sprite.delete()
   basic.showIcon(IconNames.Happy)
 })
